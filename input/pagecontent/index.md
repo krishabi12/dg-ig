@@ -6,22 +6,20 @@
 
 ### Use Case
 
-TODO: Beschreibt in zwei bis drei Sätzen, welche Situation euer IG abbildet.
-Wer erfasst die Daten, wer liest sie, und wofür werden sie gebraucht?
+In einer Hausarztpraxis werden Arzneimittelallergien von Ärztinnen und Ärzten erfasst und dokumentiert. Bei einer späteren Behandlung in einer Notfallstation können diese Informationen abgerufen werden, um mögliche allergische Reaktionen auf Medikamente zu berücksichtigen und die Patientensicherheit zu erhöhen.
 
 ### Scope
 
-TODO: Was deckt dieses IG ab, und was bewusst nicht?
+Dieser Implementation Guide beschreibt die standardisierte Erfassung und den Austausch von Arzneimittelallergien auf Basis von HL7 FHIR R4 und CH Core. Er definiert Anforderungen an den klinischen Status, die Codierung, die Kritikalität, den Beginn der Allergie, die erfassende Person sowie die Dokumentation von Reaktionen.
+
+Die Behandlung von Allergien und die Dokumentation von Allergien gegen Lebensmittel oder andere nichtmedikamentöse Stoffe gehören nicht zum Anwendungsbereich.
 
 ### Artefakte
 
-TODO: Ergänzt pro Artefakt einen Satz, wofür es da ist.
+* [DG Arzneimittelallergie](StructureDefinition-dg-medication-allergy.html): Dieses FHIR-Profil definiert die Anforderungen an die standardisierte Dokumentation von Arzneimittelallergien auf Basis von CH Core AllergyIntolerance.
 
-* [DG Arzneimittelallergie](StructureDefinition-dg-medication-allergy.html): TODO
-* [Titel eures Beispiels](AllergyIntolerance-TODO_Name.html): TODO
+* [Penicillinallergie bei Anna Muster](AllergyIntolerance-PenicillinAllergieAnna.html): Dieses Beispiel zeigt eine bestätigte Penicillinallergie bei einer fiktiven Patientin mit hoher Kritikalität und Urtikaria als dokumentierter Reaktion.
 
-<!-- TODO_Name ist der Name hinter "Instance:" in beispiele.fsh,
-     z. B. AllergyIntolerance-PenicillinAllergieAnna.html -->
 
 ### Abhängigkeiten
 
@@ -29,6 +27,6 @@ Dieses IG baut auf [CH Core 6.0.0](https://fhir.ch/ig/ch-core/6.0.0/) auf.
 
 ### Autorin oder Autor
 
-TODO: Euer Name.
+Abiramy Krishnakumar
 
 <p style="font-size:smaller">Erstellt im Lab des Moduls Data Standards in Healthcare, ZHAW, HS26. Kein offizieller Standard.</p>
